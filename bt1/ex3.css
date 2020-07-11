@@ -1,0 +1,12 @@
+div{
+	display: flex;
+	align-items: center;
+}
+a{
+	padding-left: 3px;
+	text-decoration: none;
+	color: #000;
+}
+p{
+	font-weight: 400;
+}
