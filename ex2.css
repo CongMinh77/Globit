@@ -1,0 +1,69 @@
+body{
+	width: 1000px;
+	height: 3000px;
+}
+.a1{
+	width: 1000px;
+	height: 2000px;
+	border: 2px solid #000;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.a24{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+.a1 .a2{
+	width: 100%;
+	height: 100px;
+	border: 2px solid red;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 30;
+}
+.a1 .a3{
+	width: 100%;
+	height: 100px;
+	border: 2px solid #00a2e8;
+	bottom: 0;
+	position: sticky;
+	z-index: 30;
+}
+.a1 .a4{
+	border: 2px solid #ff7f27;
+	width: 100%;
+	height: 900px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.a5{
+	background-color: #a349a4;
+	border: 2px solid #a349a4;
+	width: 400px;
+	height: 400px;
+	top: 300px;
+	position: sticky;
+	left: 200px;
+
+}
+.a6{
+	background-color: #fff64b;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #fff64b;
+	z-index: 20;
+	position: absolute;
+}
+html:not([data-scroll='0']) .a5, html:not([data-scroll='0']) .a4{
+
+}
+@media (max-width: 780px){
+	.a1,.a2,.a3,.a4,.a5{
+		width: 50%;
+	}
+}
+
